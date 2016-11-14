@@ -17,4 +17,5 @@ RUN apt-get -y install \
     build-essential \
   && pip install --upgrade pip \
   && pip install --upgrade virtualenv fabric \
+  && pip install pysphere
   && rm -rf /var/cache/apt/*
