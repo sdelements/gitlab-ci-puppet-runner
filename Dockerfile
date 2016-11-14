@@ -4,7 +4,8 @@ FROM ubuntu
 RUN apt-get -y update && apt-get -y upgrade
 RUN apt-get -y install ruby \
   ruby-bundler \
-  ruby-dev
+  ruby-dev \
+  vagrant
 RUN rm -rf /var/cache/apt/*
 RUN gem install puppet-lint rake serverspec --no-document
 
