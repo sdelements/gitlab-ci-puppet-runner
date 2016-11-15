@@ -1,0 +1,7 @@
+ENV['SERVER_SPEC_HOSTS'] = 'hostname or ip'
+ENV['TARGET_HOST'] = ENV['SERVER_SPEC_HOSTS']
+ENV['SUDO_PASSWORD'] = 'Password12345'
+# ENV['ASK_SUDO_PASSWORD'] = '0'
+ENV['TARGET_USER'] = 'sde_admin' # Typically this should be 'sde_admin'
+ENV['SDE_VERSION'] = '3.9.41'
+ENV['LOGIN_PASSWORD'] = ENV['SUDO_PASSWORD']

@@ -15,7 +15,11 @@ RUN apt-get -y install \
     python-pip \
     python-dev \
     build-essential \
+    rsync \
   && pip install --upgrade pip \
   && pip install --upgrade virtualenv fabric \
-  && pip install pysphere
+  && pip install pysphere \
   && rm -rf /var/cache/apt/*
+
+COPY Rakefile ./
+COPY spec/ ./spec/
