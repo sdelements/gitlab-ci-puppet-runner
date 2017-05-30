@@ -7,7 +7,7 @@ RUN apt-get -y install ruby \
   ruby-dev \
   vagrant
 RUN rm -rf /var/cache/apt/*
-RUN gem install puppet-lint rake serverspec --no-document
+RUN gem install puppet puppet-lint rake serverspec --no-document
 
 # Install python stuff and fabric
 RUN apt-get -y install \
